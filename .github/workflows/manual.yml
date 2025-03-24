@@ -7,6 +7,12 @@ on:
         default: Hello #入力パラメータのデフォルト値
         required: true #入力パラメータの必要フラグ
         description: A cheerful word #入力パラメータの概要
+      log-lavel: 
+        type: choice
+        options: 
+          - info
+          - warn
+          - error
 jobs:
   run:
     runs-on: ubuntu-latest
