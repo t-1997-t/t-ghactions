@@ -8,6 +8,6 @@ jobs:
     steps: 
       - run: echo "${EXAMPLE}" #ワークフローレベルの環境変数を出力
       - env: 
-          EXMAPLE: Defined by step level #ステップレベルで環境変数をオーバーライド
+          EXAMPLE: Defined by step level #ステップレベルで環境変数をオーバーライド
         run: echo "${EXAMPLE}" #オーべーライドされた環境変数を出力
         #　‐がある場合とない場合の違いは？
