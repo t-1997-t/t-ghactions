@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: printenv | grep 'LITERAL_'
-      env:
-        LITERAL_NULL: ${{ null }} # null型
-        LITERAL_BOOLEAN: ${{ true }} 
-        LITERAL_NUMBER: ${{ 1234 }}
-        LITERAL_STRING: ${{ 'Hello' }} #string型
-        LITERAL_OMIT_STRING: World #string型省略記法
+        env:
+          LITERAL_NULL: ${{ null }} # null型
+          LITERAL_BOOLEAN: ${{ true }} 
+          LITERAL_NUMBER: ${{ 1234 }}
+          LITERAL_STRING: ${{ 'Hello' }} #string型
+          LITERAL_OMIT_STRING: World #string型省略記法
