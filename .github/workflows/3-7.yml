@@ -6,8 +6,8 @@ jobs:
     steps:
       - run: printenv | grep 'LITERAL_'
       env:
-        LITERL_NULL: ${{ null }} # null型
-        LITERL_BOOLEAN: ${{ true }} 
-        LITERL_NUMBER: ${{ 1234 }}
-        LITERL_STRING: ${{ 'Hello' }} #string型
-        LITERL_OMIT_STRING: World #string型省略記法
+        LITERAL_NULL: ${{ null }} # null型
+        LITERAL_BOOLEAN: ${{ true }} 
+        LITERAL_NUMBER: ${{ 1234 }}
+        LITERAL_STRING: ${{ 'Hello' }} #string型
+        LITERAL_OMIT_STRING: World #string型省略記法
