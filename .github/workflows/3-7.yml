@@ -1,0 +1,13 @@
+name: Literals
+on: push
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - run: printenv | grep 'LITERAL_'
+      env:
+        LITERL_NULL: ${{ null }} # null型
+        LITERL_BOOLEAN: ${{ true }} 
+        LITERL_NUMBER: ${{ 1234 }}
+        LITERL_STRING: ${{ 'Hello' }} #string型
+        LITERL_OMIT_STRING: World #string型省略記法
