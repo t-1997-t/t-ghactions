@@ -15,5 +15,5 @@ jobs:
           workload_identity_provider: 'projects/913941604148/locations/global/workloadIdentityPools/github-pool/providers/github-provider'
           service_account: 'githubactions@stellar-verve-302112.iam.gserviceaccount.com'
 
-      # プライベートな GCS バケットを読み取ってみる
+      # プライベートな GCS バケットを読み取ってみる!
       - run: gcloud storage ls gs://test-t-1997-t
