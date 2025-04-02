@@ -1,0 +1,19 @@
+name: google cloud
+
+on:
+  push:
+
+jobs:
+  gsls:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: google-github-actions/auth@v0
+        with:
+          workload_identity_provider: 'projects/913941604148/locations/global/workloadIdentityPools/github-pool/providers/github-provider'
+          service_account: 'githubactions@stellar-verve-302112.iam.gserviceaccount.com'
+
+      # プライベートな GCS バケットを読み取ってみる
+      - run: gcloud storage ls gs://test-t-1997-t
